@@ -1,0 +1,40 @@
+{
+  "name": "@anopszetex/example-project",
+  "version": "1.0.0",
+  "description": "enviroment customized",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">16.0.0 <17.0.0"
+  },
+  "scripts": {
+    "start-server": "mkdir -p logs && node src/webapi.js",
+    "api1": "curl localhost:5000 | tee logs/api1.log",
+    "api2": "curl localhost:6000 | tee logs/api2.log",
+    "example01": "node src/examples/1.concat-streams.pass-through.js | tee logs/1.concat-streams.pass-through.js.log",
+    "example02": "node src/examples/2.async-streams.js | tee logs/2.async-streams.js.log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anopszetex/example-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "autocannon": "^7.9.0",
+    "eslint": "^8.19.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.6.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "ntl": "^5.1.0",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
