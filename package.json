@@ -12,7 +12,8 @@
     "api1": "curl localhost:5000 | tee logs/api1.log",
     "api2": "curl localhost:6000 | tee logs/api2.log",
     "example01": "node src/examples/1.concat-streams.pass-through.js | tee logs/1.concat-streams.pass-through.js.log",
-    "example02": "node src/examples/2.async-streams.js | tee logs/2.async-streams.js.log"
+    "example02": "node src/examples/2.async-streams.js | tee logs/2.async-streams.js.log",
+    "example03": "node src/examples/3.concat-streams.async-iterators.js | tee logs/3.concat-streams.async-iterators.js.log"
   },
   "repository": {
     "type": "git",
